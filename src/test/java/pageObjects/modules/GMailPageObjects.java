@@ -9,6 +9,8 @@ import org.testng.Assert;
 
 import pageObjects.initializePageObjects.PageFactoryInitializer;
 
+import java.util.logging.Logger;
+
 /**
  * @author Gladson Antony
  * @date Sep 17, 2016

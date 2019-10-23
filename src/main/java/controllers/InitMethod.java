@@ -30,6 +30,7 @@ public class InitMethod
 	public static String Browser = appConfig.getBrowser();
 	public static int MaxPageLoadTime = appConfig.getMaxPageLoadTime();
 	public static int ImplicitlyWait = appConfig.getImplicitlyWait();
+	public static String VideoFeature = appConfig.getVideoFeature();
 	
 	public static String FS = File.separator;
 

@@ -67,6 +67,12 @@
             <artifactId>selenium-ie-driver</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+        <!-- Automation Remarks Video Recorder TestNG Dependency -->
+        <dependency>
+            <groupId>com.automation-remarks</groupId>
+            <artifactId>video-recorder-testng</artifactId>
+            <version>1.4</version>
+        </dependency>
         <!-- Ghost/Phantom Webdriver Headerless Browser Dependency -->
         <dependency>
             <groupId>com.github.detro</groupId>

@@ -9,6 +9,8 @@ import ru.qatools.properties.Property;
 import ru.qatools.properties.PropertyLoader;
 import ru.qatools.properties.Resource;
 
+import static controllers.InitMethod.VideoFeature;
+
 @Resource.Classpath("ApplicationConfig.properties")
 public class ApplicationConfigReader 
 {
@@ -44,6 +46,9 @@ public class ApplicationConfigReader
 
 	public int getImplicitlyWait() {
 		return ImplicitlyWait;
+	}
+	public String getVideoFeature() {
+		return VideoFeature;
 	}
 
 }

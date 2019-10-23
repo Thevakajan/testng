@@ -20,7 +20,7 @@ public class GoogleHomePageObjects extends PageFactoryInitializer
 	@FindBy(xpath="//a[text()='Gmail']")
 	private WebElement GmailLink;
 
-	@FindBy(id="lst-ib")
+	@FindBy(xpath="//*[@type=\"text\"]")
 	private WebElement SearchBox;
 
 	
@@ -31,7 +31,7 @@ public class GoogleHomePageObjects extends PageFactoryInitializer
 	}
 
 
-	public GoogleHomePageObjects enterTextToSearchBox() 
+	public GoogleHomePageObjects enterTextToSearchBox() throws Exception
 	{
 		SearchBox.sendKeys(RandomGenerator.GenerateRandomEMAILIDs("google.com"));
 		return this;	
@@ -40,7 +40,7 @@ public class GoogleHomePageObjects extends PageFactoryInitializer
 	
 	public GoogleHomePageObjects verifyPageTitle() throws Exception 
 	{
-		Assert.assertEquals(getWebDriver().getTitle(), "Boogle");
+		Assert.assertEquals(getWebDriver().getTitle(), "Google");
 		return this;
 	}
 
